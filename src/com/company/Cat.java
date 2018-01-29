@@ -8,7 +8,7 @@ public class Cat extends Animal{
 
     @Override
     public void swim(int swim) {
-        System.out.println("Коты не плавают");
+        System.out.println("Кот " + name + " сходит с дистанции, коты не плавают");
         onDistance = false;
     }
 }
