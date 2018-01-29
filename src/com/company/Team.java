@@ -14,6 +14,7 @@ public class Team {
     }
 
     public void info(){
+        System.out.println("Результат команды " + name + ":");
         for (Challengeable c: challengeables
              ) {
             c.getInfo();
