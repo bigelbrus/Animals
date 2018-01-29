@@ -17,5 +17,6 @@ public class Marathon {
             }
         }
         System.out.println("Конец марафона.");
+        System.out.println("Точно конец");
     }
 }
