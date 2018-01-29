@@ -7,6 +7,7 @@ public class Lake extends Obstacle {
 
     public Lake(int wide){
         this.wide = wide;
+        this.type = "Озеро";
     }
 
     @Override

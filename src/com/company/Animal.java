@@ -6,6 +6,7 @@ public abstract class Animal implements Challengeable{
     protected int maxJump;
     protected int maxSwim;
     protected boolean onDistance = true;
+    protected String type;
 
     //public Animal(){}
 
@@ -23,6 +24,7 @@ public abstract class Animal implements Challengeable{
             if (maxRun>70) maxRun = 70;
         }
 
+        this.type = type;
         this.name = name;
         this.maxJump = maxJump;
         this.maxRun = maxRun;
@@ -64,5 +66,9 @@ public abstract class Animal implements Challengeable{
         if (onDistance) {
             System.out.println(this.name + " прошел марафон");
         } else System.out.println(this.name + " не прошел марафон");
+    }
+
+    public String getType(){
+        return type;
     }
 }

@@ -11,6 +11,7 @@ public class Marathon {
 
     public void Game(Team team) {
         for (int i = 0; i < obstacles.length; i++) {
+            System.out.println("Следующее испытание " + obstacles[i].getType());
             for (int j = 0; j < team.getParticipants().length; j++) {
                 if (team.getParticipants()[j].isOnDistance()) obstacles[i].doIt(team.getParticipants()[j]);
             }

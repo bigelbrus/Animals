@@ -5,6 +5,7 @@ public class Wall extends Obstacle{
 
     public Wall(int height){
         this.height = height;
+        this.type = "Стена";
     }
 
     @Override
